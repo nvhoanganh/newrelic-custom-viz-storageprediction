@@ -12,7 +12,7 @@
         },
         {
             "name": "totalQuery",
-            "title": "Total Available Storage Query",
+            "title": "Available Storage Query",
             "description": "Timeseries NRQL query for available storage",
             "type": "nrql"
         },
