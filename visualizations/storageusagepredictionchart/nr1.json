@@ -5,35 +5,28 @@
     "description": "",
     "configuration": [
         {
-            "name": "nrqlQueries",
-            "title": "NRQL Queries",
-            "type": "collection",
-            "items": [
-                {
-                    "name": "accountId",
-                    "title": "Account ID",
-                    "description": "Account ID to be associated with the query",
-                    "type": "account-id"
-                },
-                {
-                    "name": "query",
-                    "title": "Query",
-                    "description": "NRQL query for visualization",
-                    "type": "nrql"
-                }
-            ]
+            "name": "accountId",
+            "title": "Account ID",
+            "description": "Account ID",
+            "type": "account-id"
         },
         {
-            "name": "fill",
-            "title": "Fill color",
-            "description": "A fill color to override the default fill color",
-            "type": "string"
+            "name": "totalQuery",
+            "title": "Total Available Storage Query",
+            "description": "Timeseries NRQL query for available storage",
+            "type": "nrql"
         },
         {
-            "name": "stroke",
-            "title": "Stroke color",
-            "description": "A stroke color to override the default stroke color",
-            "type": "string"
+            "name": "usedQuery",
+            "title": "Used Storage Query",
+            "description": "Timeseries NRQL query for used storage",
+            "type": "nrql"
+        },
+        {
+            "name": "predictionQuery",
+            "title": "Prediction Storage Query",
+            "description": "Linear prediction NRQL query for used storage",
+            "type": "nrql"
         }
     ]
 }
